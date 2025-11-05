@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+:root {
+  --color-primary: #ec9096;
+  --color-secondary: #bbdda7;
+  --color-primary-dark: #d77f85;
+  --color-secondary-dark: #a8c996;
+  --color-primary-light: rgba(236, 144, 150, 0.2);
+  --color-secondary-light: rgba(187, 221, 167, 0.2);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.border-primary {
+  border-color: var(--color-primary);
+}
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary-dark);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-styled {
+  border: 2px solid var(--color-secondary);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s;
+}
+
+.input-styled:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-container {
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-secondary-light), var(--color-primary-light));
+}
