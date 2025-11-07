@@ -19,7 +19,8 @@ import com.example.videoLocadora.service.AtorService;
 
 @RestController
 @RequestMapping(value = "/ator")
-@CrossOrigin
+//COLOCAR O ENDEREÇO
+@CrossOrigin(origins="http://localhost:")
 public class AtorController {
 	
 	@Autowired
